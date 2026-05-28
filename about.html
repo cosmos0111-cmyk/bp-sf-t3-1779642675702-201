@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 | 서버 웜업, PBN 빌더에게 묻다</title>
+    <meta name="description" content="서버 웜업의 민낯을 까발린다. 마포 PBN 빌더가 전하는 충격적인 내부 정보. 010-6279-0862">
+    <meta name="keywords" content="PBN 빌더, 서버 웜업, 마포, 서버 최적화, 블로그, brutalism, 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-201.pages.dev/info">
+    <meta property="og:title" content="서버 웜업? PBN 빌더가 찢는다 — 정보 페이지">
+    <meta property="og:description" content="거품 걷어내고 본질만 남긴 서버 웜업 정보. 마포에서 전하는 충격적인 내부 고발.">
+    <meta property="og:type" content="website">
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0a; color: #e0e0e0; font-family: 'Courier New', monospace; line-height: 1.6; overflow-x: hidden; }
+        a { color: #ff00ff; text-decoration: underline; text-underline-offset: 4px; transition: all 0.2s; }
+        a:hover { color: #00ffcc; background: #ff00ff20; text-decoration: none; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        ul, ol { padding-left: 1.5rem; }
+
+        /* TYPOGRAPHY IMPACT */
+        h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.02em; text-transform: uppercase; }
+        h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 0.9; color: #ff00ff; text-shadow: 4px 4px 0 #00ffcc; margin-bottom: 1rem; }
+        h2 { font-size: clamp(2rem, 5vw, 3.5rem); color: #00ffcc; border-left: 8px solid #ff00ff; padding-left: 1rem; margin: 2rem 0 1rem; }
+        h3 { font-size: clamp(1.5rem, 3vw, 2.2rem); color: #ff00ff; margin: 1.5rem 0 0.5rem; }
+        p { font-size: 1.1rem; margin-bottom: 1rem; max-width: 70ch; color: #b0b0b0; }
+        .small { font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 0.1em; }
+
+        /* LAYOUT FULL BLEED */
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        .section { padding: 3rem 1rem; border-bottom: 2px solid #ff00ff40; }
+        .section:last-child { border-bottom: none; }
+
+        /* STREET BRUTALIST MODULE */
+        .card { background: #111; border: 2px solid #ff00ff; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 8px 8px 0 #00ffcc40; transition: 0.2s; }
+        .card:hover { transform: translate(-2px, -2px); box-shadow: 12px 12px 0 #ff00ff40; }
+        .card h3 { margin-top: 0; }
+        .card p { color: #ccc; }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+
+        .faq-item { border-bottom: 1px solid #333; padding: 1.5rem 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 { cursor: pointer; margin: 0; color: #ff00ff; }
+        .faq-item p { margin-top: 0.5rem; }
+
+        .highlight { background: #ff00ff20; padding: 0.2rem 0.5rem; border-left: 4px solid #ff00ff; font-weight: bold; }
+
+        .tel-link { display: inline-block; background: #ff00ff; color: #0a0a0a; padding: 1rem 2rem; font-weight: 900; font-size: 1.5rem; text-decoration: none; border: 2px solid #00ffcc; margin: 1rem 0; }
+        .tel-link:hover { background: #00ffcc; color: #0a0a0a; }
+
+        /* NAV */
+        nav { background: #0a0a0a; border-bottom: 2px solid #ff00ff; position: sticky; top: 0; z-index: 100; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+        nav a { color: #00ffcc; text-decoration: none; margin: 0 0.5rem; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        nav a:hover { color: #ff00ff; }
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-menu span { display: block; width: 25px; height: 3px; background: #ff00ff; margin: 5px 0; transition: 0.3s; }
+
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            .hamburger-menu { display: block; }
+            nav .container { flex-wrap: wrap; }
+            nav .nav-links { display: none; width: 100%; flex-direction: column; text-align: center; padding: 1rem 0; }
+            nav .nav-links.active { display: flex; }
+            nav .nav-links a { margin: 0.5rem 0; font-size: 1.2rem; }
+        }
+
+        /* MISC */
+        .neon-border { border: 2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff40, inset 0 0 15px #ff00ff10; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="/" style="font-size:1.2rem; color:#ff00ff;">PBN BLD</a>
+        <div class="hamburger-menu" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="/">홈</a>
+            <a href="/blog">블로그</a>
+            <a href="/info">정보</a>
+            <a href="tel:01062790862">010-6279-0862</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="section">
+        <div class="container">
+            <h1>서버 웜업의 민낯</h1>
+            <p class="small">마포 PBN 빌더가 까발리는 진실 | 2024.03 업데이트</p>
+            <p>권위에 반항하는 기술. 거품 뺀 본질만 남겼다. <span class="highlight">서버 웜업, 제대로 알고 써라.</span> 마포에서 직접 굴린 PBN 빌더의 내부 고발장.</p>
+            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>웜업의 본질</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>왜 웜업인가</h3>
+                    <p>콜드 스타트는 병신짓. 미리 돌려놔야 검색새끼들이 너를 인정한다. <strong>마포 PBN 빌더</strong>는 이걸로 밥 먹고 산다.</p>
+                </div>
+                <div class="card">
+                    <h3>PBN의 핵심</h3>
+                    <p>사이트를 키우기 전에 서버를 먼저 웜업해라. 트래픽 시뮬레이션, 콘텐츠 스케줄링, 백링크 파워 — <span class="highlight">3박자가 맞아야 산다.</span></p>
+                </div>
+                <div class="card">
+                    <h3>마포에서 배운 것</h3>
+                    <p>이 동네 스타트업들은 웜업을 무시한다. 그래서 망한다. <strong>본질은 권위에 반항하는 기술</strong> — 시스템을 속이는 게 아니라 시스템을 이해하는 것.</p>
+                </div>
+                <div class="card">
+                    <h3>빌더의 시크릿</h3>
+                    <p>하루 20분씩 7일. 그게 끝이다. 복잡할 거 없다. 다만 <span class="highlight">지역 시그널</span>을 무시하면? 마포에서도 퇴출당한다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>FAQ — 초짜들을 위한 진실</h2>
+            <div class="faq-item">
+                <h3>서버 웜업이 뭐길래?</h3>
+                <p>서버를 미리 데워서 검색엔진이 너를 진짜 사이트로 인식하게 만드는 거다. PBN 빌더는 이걸 <span class="highlight">자동화</span>해서 권위에 반항한다.</p>
+            </div>
+            <div class="faq-item">
+                <h3>PBN이 뭔데?</h3>
+                <p>Private Blog Network. 네트워크로 연결된 사이트들. <strong>마포 PBN 빌더</strong>는 이걸로 서버 웜업을 찢는다.</p>
+            </div>
+            <div class="faq-item">
+                <h3>왜 마포인가?</h3>
+                <p>여기는 실패자와 혁신가가 공존한다. <span class="highlight">권위에 반항하는 기술</span>의 온상. 서버 웜업도 여기서 시작해야 제맛.</p>
+            </div>
+            <div class="faq-item">
+                <h3>얼마나 걸리나?</h3>
+                <p>평균 7~10일. <strong>010-6279-0862</strong>로 전화해라. 상담은 거침없이.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>핵심만 찢는다</h2>
+            <div class="card neon-border" style="margin-bottom:2rem;">
+                <h3>서버 웜업 체크리스트</h3>
+                <ul>
+                    <li>✅ 콘텐츠 5개 이상 미리 업로드</li>
+                    <li>✅ 트래픽 시뮬레이션 (하루 50~100 방문)</li>
+                    <li>✅ 백링크 3~5개 저품질 사이트에서</li>
+                    <li>✅ 지역 시그널: 마포 키워드 포함</li>
+                    <li>✅ 7일 연속 운영 후 본격 런칭</li>
+                </ul>
+            </div>
+            <p class="small">이걸 무시하면? 검색엔진이 너를 무시한다. <a href="tel:01062790862">지금 전화해라.</a></p>
+        </div>
+    </section>
+</main>
+
+<footer class="section">
+    <div class="container text-center">
+        <p>© 2024 마포 PBN 빌더 — <span class="highlight">권위에 반항하는 기술</span></p>
+        <p class="small">서버 웜업, PBN 빌더에게 묻다. 마포에서 시작한다.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleNav() {
+        const links = document.querySelector('.nav-links');
+        links.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
